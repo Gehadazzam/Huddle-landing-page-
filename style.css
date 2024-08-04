@@ -236,6 +236,10 @@ footer {
   .heroText {
     padding-block: 4rem;
     flex-basis: 40%;
+    text-align: left;
+  }
+  h1 {
+    font-size: 3.1rem;
   }
   .hero .img {
     width: 50%;
