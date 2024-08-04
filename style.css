@@ -254,9 +254,7 @@ footer {
   .card3 .cardtext {
     flex-basis: 50%;
   }
-  .cta {
-    width: 40%;
-  }
+
   .card1,
   .card3 {
     flex-direction: row-reverse;
@@ -275,6 +273,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
+  .cta {
+    width: 50%;
   }
   .contact {
     flex: 2;
@@ -298,6 +299,9 @@ footer {
   }
 }
 @media (min-width: 1200px) {
+  .cta {
+    width: 40%;
+  }
   .try {
     height: 2.5rem;
     padding: 0rem 3.5rem;
