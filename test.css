@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --VeryPaleCyan: hsl(193, 100%, 96%);
+  --VeryDarkCyan: hsl(192, 100%, 9%);
+  --GrayishBlue: hsl(208, 11%, 55%);
+  --headingFont: "Poppins";
+  --bodyFonts: "Open Sans";
+  --headingsize: 600;
+  --lightbody: 400;
+  --boldbody: 700;
+}
+
+body {
+  font-size: 18px;
+  font-family: var(--bodyFonts);
+}
+
+h1,
+h2 {
+  font-family: var(--headingFont);
+  font-weight: var(--headingsize);
+}
+
+header {
+  background-image: url(./images/bg-hero-mobile.svg);
+  background-color: var(--VeryPaleCyan);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.logo {
+  flex-basis: 50%;
+}
+
+.logo img {
+  width: 70%;
+}
+
+.btn {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 2px 2px -4px rgba(0, 0, 0, 0.75);
+  font-weight: var(--boldbody);
+  border-radius: 2rem;
+}
+
+.try {
+  background-color: white;
+  color: var(--VeryDarkCyan);
+  font-size: 0.7rem;
+  padding: 0.5rem 2rem;
+  box-shadow: 2px 3px 4px -4px rgba(0, 0, 0, 0.75);
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.heroText {
+  flex-basis: 90%;
+  margin: auto;
+  text-align: center;
+  font-size: 1rem;
+  margin-block: 1rem;
+  color: var(--VeryDarkCyan);
+}
+
+h1 {
+  margin-block: 2rem;
+}
+
+.heroText p {
+  font-size: 1.359rem;
+}
+
+.image {
+  flex-basis: 80%;
+  margin: auto;
+}
+
+.image img {
+  width: 100%;
+}
+
+.start {
+  background-color: var(--Pink);
+  margin-block: 3rem;
+  color: white;
+  padding: 1rem 4.5rem;
+  font-size: 1.1rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  margin-block: 4rem;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 8px -4px rgba(0, 0, 0, 0.24);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  width: 90%;
+  margin: auto;
+}
+
+.card .image {
+  flex-basis: 50%;
+  margin-block: 2rem;
+}
+
+.cardtext {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+h2 {
+  color: var(--VeryDarkCyan);
+}
+
+.cardtext p {
+  color: var(--GrayishBlue);
+  padding-block: 1.5rem;
+}
+
+.card3 p {
+  width: 85%;
+}
+
+.cta {
+  box-shadow: 0px 0px 8px -4px rgba(0, 0, 0, 0.24);
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+  bottom: -2.5rem;
+  z-index: 2;
+}
+
+.cta button {
+  margin-block: 1rem;
+}
+
+footer {
+  background-color: var(--VeryDarkCyan);
+  color: white;
+  padding: 5rem 2rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.location,
+.phone,
+.email {
+  display: flex;
+  gap: 1.5rem;
+  margin-block: 1.5rem;
+}
+
+.location p,
+.phone p,
+.email p {
+  font-size: 1.3rem;
+}
+
+.location img {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.phone img,
+.email img {
+  height: 1rem;
+}
+
+.social {
+  margin-block: 2rem;
+  display: block;
+  text-align: center;
+}
+
+.social i {
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+}
+
+.copyright p {
+  font-size: 0.1111rem;
+}
+
+@media (min-width: 1000px) {
+  header {
+    background-image: url(./images/bg-hero-desktop.svg);
+  }
+  .hero .image,
+  .heroText {
+    padding-block: 4rem;
+    flex-basis: 40%;
+  }
+  .hero .img {
+    width: 50%;
+  }
+  .card .image {
+    flex-basis: 40%;
+  }
+  .cardtext {
+    flex-basis: 45%;
+    text-align: left;
+  }
+  .card3 .cardtext {
+    flex-basis: 50%;
+  }
+  .cta {
+    width: 40%;
+  }
+  .card1,
+  .card3 {
+    flex-direction: row-reverse;
+  }
+  .try {
+    padding-inline: 4rem;
+  }
+  .logo img {
+    width: 40%;
+  }
+  footer {
+    display: block;
+    padding-inline: 5%;
+  }
+  .footerContiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .contact {
+    flex: 2;
+  }
+  .contact p {
+    width: 75%;
+  }
+  .social,
+  .info1,
+  .info2 {
+    flex: 1;
+  }
+  .info {
+    display: flex;
+    align-items: center;
+  }
+  .info1,
+  .info2 {
+    flex-direction: column;
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+  }
+}
